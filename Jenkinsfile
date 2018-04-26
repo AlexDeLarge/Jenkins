@@ -4,17 +4,17 @@ pipeline {
     stages {
         stage('Unit Test Stage') {
             steps {
-               bat "mvn -pl Jenkins -Dtest=Unit* test"
+               bat "mvn -Dtest=Unit* test"
             }
         }
         stage('Integration Test Stage') {
             steps {
-               bat "mvn -pl Jenkins -Dtest=Integration* test"
+               bat "mvn -Dtest=Integration* test"
             }
         }
         stage('System Test Stage') {
             steps {
-               bat "mvn -pl Jenkins -Dtest=System* test"
+               bat "mvn -Dtest=System* test"
             }
         }
     }
