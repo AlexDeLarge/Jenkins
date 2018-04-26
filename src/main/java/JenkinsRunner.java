@@ -21,12 +21,12 @@ public class JenkinsRunner {
 
   private static final String USER_ID = "Aleksey_U";
   private static final String USER_TOKEN = "327808b6cb1967e69c8589cd5a5f8478";
-  private static final String JENKINS_URL_TEMPLATE = "http://localhost:8080/job/%s/build";
-  private static final String JENKINS_PIPELINE_MAVEN_LIKE = "Imya/job/Jenkins";
+  private static final String JENKINS_URL = "http://localhost:8080/job/%s/build";
+  private static final String JENKINS_PIPELINE = "Jenkins/job/Jenkins";
 
   @SneakyThrows
   public static void main(String[] args) {
-    String theUrl = String.format(JENKINS_URL_TEMPLATE, JENKINS_PIPELINE_MAVEN_LIKE);
+    String theUrl = String.format(JENKINS_URL, JENKINS_PIPELINE);
     UriComponentsBuilder builder = UriComponentsBuilder.fromHttpUrl(theUrl);
     URI uri = builder.build().encode().toUri();
 
