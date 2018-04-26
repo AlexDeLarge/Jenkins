@@ -22,8 +22,7 @@ public class JenkinsRunner {
   private static final String USER_ID = "Aleksey_U";
   private static final String USER_TOKEN = "327808b6cb1967e69c8589cd5a5f8478";
   private static final String JENKINS_URL_TEMPLATE = "http://localhost:8080/job/%s/build";
-  private static final String JENKINS_PIPELINE_MAVEN_LIKE = "JenkinsPipelineMavenLike/job/jenkins";
-  private static final String JENKINS_PIPELINE_ECHO_LIKE = "JenkinsPipelineEchoLike";
+  private static final String JENKINS_PIPELINE_MAVEN_LIKE = "Imya/job/Jenkins";
 
   @SneakyThrows
   public static void main(String[] args) {

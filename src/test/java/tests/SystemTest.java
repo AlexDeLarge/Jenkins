@@ -2,16 +2,15 @@ package tests;
 
 import org.testng.annotations.Test;
 
-import lombok.extern.log4j.Log4j2;
+import static org.testng.Reporter.log;
 
 /**
  * Created by Oleksii_Usachov on 4/26/2018
  */
-@Log4j2
 public class SystemTest {
 
   @Test
   public void shouldRunSystemTest() {
-    log.debug("System test run");
+    log("System test run");
   }
 }
